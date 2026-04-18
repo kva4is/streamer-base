@@ -18,19 +18,22 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body className={inter.className}>
-        <header className="border-b bg-white">
-          <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-            <Link href="/" className="text-xl font-bold text-twitch">
-              🎮 Streamer Base
-            </Link>
-            <nav className="hidden md:flex gap-6">
-              <Link href="/news" className="hover:text-twitch">Новости</Link>
-              <Link href="/tips" className="hover:text-twitch">Советы</Link>
-              <Link href="/tools" className="hover:text-twitch">Инструменты</Link>
-              <Link href="/jobs" className="hover:text-twitch">Вакансии</Link>
-            </nav>
-          </div>
-        </header>
+        <header className="bg-[#0e0e0e] border-b border-[#2a2a2a] sticky top-0 z-10">
+  <div className="max-w-7xl mx-auto px-4 md:px-6 py-4 flex items-center justify-between">
+    <Link href="/" className="flex items-center gap-2">
+      <span className="text-2xl">🎮</span>
+      <span className="text-white text-xl font-bold">
+        STREAMER<span className="text-[#107C10]">BASE</span>
+      </span>
+    </Link>
+    <nav className="hidden md:flex items-center gap-8 text-sm font-semibold">
+      <Link href="/news" className="text-white hover:text-[#107C10] transition-colors">НОВОСТИ</Link>
+      <Link href="/tips" className="text-white hover:text-[#107C10] transition-colors">СОВЕТЫ</Link>
+      <Link href="/tools" className="text-white hover:text-[#107C10] transition-colors">ИНСТРУМЕНТЫ</Link>
+      <Link href="/jobs" className="text-white hover:text-[#107C10] transition-colors">БИРЖА</Link>
+    </nav>
+  </div>
+</header>
         {children}
         <footer className="border-t bg-gray-50 mt-16">
           <div className="max-w-6xl mx-auto px-4 py-8 text-center text-gray-500">
