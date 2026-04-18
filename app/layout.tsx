@@ -35,14 +35,16 @@ export default function RootLayout({
   </div>
 </header>
         {children}
-        <footer className="border-t bg-gray-50 mt-16">
-          <div className="max-w-6xl mx-auto px-4 py-8 text-center text-gray-500">
-            © 2024 Streamer Base — проект с открытым кодом на{' '}
-            <a href="https://github.com/kva4is/streamer-base" className="text-twitch hover:underline">
-              GitHub
-            </a>
-          </div>
-        </footer>
+        <footer className="bg-[#0e0e0e] border-t border-[#2a2a2a]">
+  <div className="max-w-7xl mx-auto px-4 md:px-6 py-8 text-center">
+    <p className="text-gray-500 text-sm">
+      © 2024 StreamerBase — проект с открытым кодом на{' '}
+      <a href="https://github.com/kva4is/streamer-base" className="text-[#107C10] hover:underline">
+        GitHub
+      </a>
+    </p>
+  </div>
+</footer>
       </body>
     </html>
   )
